@@ -253,23 +253,6 @@ body {
     z-index: -1;
 }
 
-.deck {
-    display: none;
-    position: absolute;
-    width: calc( 20% - 10px);
-    height: calc( 25% - 10px);
-    z-index: 5;
-    cursor: pointer;
-    border-radius: 1.5vh;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-    -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.50);
-    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.50);
-    background-color: black;
-    background-image: url(../img/back_card.png);
-    background-position: center;
-    background-size: cover;
-}
-
 .card-wrapper {
     display: flex;
     align-items: center;
@@ -289,7 +272,7 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: transform .9s;
+    transition: transform .9s!important;
     transform-style: preserve-3d;
     position: absolute;
     width: calc( 20% - 10px);
@@ -568,8 +551,8 @@ body {
         padding: 2vw;
     }
     .card {
-        width: calc( 25% - 10px)!important;
-        height: calc( 20% - 7px)!important;
+        width: calc( 25% - 12px)!important;
+        height: calc( 20% - 8px)!important;
     }
     .card-pos:nth-child(2) {
         transform: translate(-30.1vw, -47.8vw)!important;

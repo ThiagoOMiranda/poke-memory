@@ -47,16 +47,25 @@ victory.src = "./assets/snd/victory.mp3";
 const gameTheme = new Audio();
 gameTheme.src = "./assets/snd/game-theme.mp3";
 
+
 //Função que verifica se a orientação da tela é retrato:
 (function identifyScreen() {
     if (window.matchMedia("(orientation: portrait)").matches) {
         cards.forEach((card) => {
-            card.removeAttribute('data-tilt');
+            card.vanillaTilt.destroy();
+            /*card.removeAttribute('data-tilt');
             card.removeAttribute('data-tilt-scale');
             card.removeAttribute('data-tilt-glare');
-            card.removeAttribute('data-tilt-max-glare');
-        })
-        return;
+            card.removeAttribute('data-tilt-max-glare');*/
+        });
+    } else {
+        cards.forEach((card) => {
+            VanillaTilt.init(card);
+            /*card.addAttribute('data-tilt');
+            card.addAttribute('data-tilt-scale');
+            card.addAttribute('data-tilt-glare');
+            card.addAttribute('data-tilt-max-glare');*/
+        });
     }
 })();
 
@@ -170,7 +179,7 @@ function mainGame() {
         gameTheme.currentTime = 0;
         victory.play();
         FlipCards();
-        setTimeout(orderCards, 1000);
+        setTimeout(orderCards, 1300);
         setTimeout(() => {
             frontChange();
             randomColor(cardsFront);
