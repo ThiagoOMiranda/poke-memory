@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="/assets/img/Pokeball.svg">
+    <title>Poke Memory</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-wrapper">
+                <div class="logo-wrapper">
+                    <img id="poke-logo" src="/assets/img/Logo_Poke.svg" alt="Poke-Memory Logo">
+                    <p id="title-text" class="hidden blink">Clique para iniciar</p>
+                </div>
+                <div class="nav-menu">
+                    <div class="marker">
+                        <img src="./assets/img/Pokeball.svg" alt="Pontuação">
+                        <p id="captured">00</p>
+                    </div>
+                    <button id="reset-btn">Reset</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="background" class="crt"></div>
+    <div class="container z-back">
+        <div class="card-wrapper">
+            <div class="deck"></div>
+            <div class="card" data-card="01" data-tilt data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.9">
+                <img class="card-front">
+                <img class="card-back rounded hidden">
+            </div>
+            <div class="card" data-card="02" data-tilt data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.9">
+                <img class="card-front">
+                <img class="card-back rounded hidden">
+            </div>
+            <div class="card" data-card="03" data-tilt data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.9">
+                <img class="card-front">
+                <img class="card-back rounded hidden">
+            </div>
+            <div class="card" data-card="04" data-tilt data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.9">
+                <img class="card-front">
+                <img class="card-back rounded hidden">
+            </div>
+            <div class="card" data-card="05" data-tilt data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.9">
+                <img class="card-front">
+                <img class="card-back rounded hidden">
+            </div>
+            <div class="card" data-card="06" data-tilt data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.9">
+                <img class="card-front">
+                <img class="card-back rounded hidden">
+            </div>
+            <div class="card" data-card="07" data-tilt data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.9">
+                <img class="card-front">
+                <img class="card-back rounded hidden">
+            </div>
+            <div class="card" data-card="08" data-tilt data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.9">
+                <img class="card-front">
+                <img class="card-back rounded hidden">
+            </div>
+            <div class="card" data-card="09" data-tilt data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.9">
+                <img class="card-front">
+                <img class="card-back rounded hidden">
+            </div>
+            <div class="card" data-card="10" data-tilt data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.9">
+                <img class="card-front">
+                <img class="card-back rounded hidden ">
+            </div>
+            <div class="card " data-card="01" data-tilt data-tilt-scale="1.1 " data-tilt-glare data-tilt-max-glare="0.9 ">
+                <img class="card-front">
+                <img class="card-back rounded hidden">
+            </div>
+            <div class="card" data-card="02" data-tilt data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.9">
+                <img class="card-front">
+                <img class="card-back rounded hidden ">
+            </div>
+            <div class="card " data-card="03" data-tilt data-tilt-scale="1.1 " data-tilt-glare data-tilt-max-glare="0.9 ">
+                <img class="card-front">
+                <img class="card-back rounded hidden">
+            </div>
+            <div class="card" data-card="04" data-tilt data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.9">
+                <img class="card-front">
+                <img class="card-back rounded hidden ">
+            </div>
+            <div class="card " data-card="05" data-tilt data-tilt-scale="1.1 " data-tilt-glare data-tilt-max-glare="0.9 ">
+                <img class="card-front">
+                <img class="card-back rounded hidden">
+            </div>
+            <div class="card" data-card="06" data-tilt data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.9">
+                <img class="card-front">
+                <img class="card-back rounded hidden ">
+            </div>
+            <div class="card " data-card="07" data-tilt data-tilt-scale="1.1 " data-tilt-glare data-tilt-max-glare="0.9 ">
+                <img class="card-front">
+                <img class="card-back rounded hidden">
+            </div>
+            <div class="card" data-card="08" data-tilt data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.9">
+                <img class="card-front">
+                <img class="card-back rounded hidden ">
+            </div>
+            <div class="card " data-card="09" data-tilt data-tilt-scale="1.1 " data-tilt-glare data-tilt-max-glare="0.9 ">
+                <img class="card-front">
+                <img class="card-back rounded hidden">
+            </div>
+            <div class="card" data-card="10" data-tilt data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.9">
+                <img class="card-front">
+                <img class="card-back rounded hidden ">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer ">
+            <div class="footer-wrapper ">
+                <div class="footer-menu ">
+                    <div class="text-wrapper ">
+                        <p><i>Projeto educacional desenvolvido por: <b>Thiago de Oliveira Miranda</b></i></p>
+                    </div>
+                    <p>©2022 Pokémon. ©1995 - 2022 Nintendo/Creatures Inc./GAME FREAK inc.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript " src="/assets/js/vanilla-tilt.js.txt"></script>
+    <script type="text/javascript " src="/assets/js/scripts.js"></script>
+</body>
+
+</html>
