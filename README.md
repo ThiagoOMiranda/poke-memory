@@ -19,6 +19,12 @@ PROJETO EDUCACIONAL PARA O BOOTCAMP DA DIO:
 
 </h2>
 
+<spam align="center">
+
+https://thiagoomiranda.github.io/poke-memory/ 
+
+</spam>
+
 ***
 
 &emsp;&emsp;O exercício proposto consistia em recriar o jogo da *memória*, com o intúito de aplicar conceitos de programação em Javascript. O aprimoramento em Javascript nesta atividade se deu através da aplicação dos métodos ***forEach***, para iterar em conjuntos de elementos do *DOM (Document Object Model)*, seletores do tipo ***querySelector*** que também foram empregados para selecionar grupos de elementos através de classes e tags e o uso da palavra reservada ***this*** em funções de monitoramento de eventos ***eventListeners***, onde a atribuição do elemento era definida no momento do clique.
