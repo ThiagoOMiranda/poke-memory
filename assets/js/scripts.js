@@ -61,10 +61,10 @@ function identifyScreen() {
     } else {
         cards.forEach((card) => {
             VanillaTilt.init(card);
-            card.addAttribute('data-tilt');
-            card.addAttribute('data-tilt-scale');
-            card.addAttribute('data-tilt-glare');
-            card.addAttribute('data-tilt-max-glare');
+            card.setAttribute('data-tilt', "");
+            card.setAttribute('data-tilt-scale', "");
+            card.setAttribute('data-tilt-glare', "");
+            card.setAttribute('data-tilt-max-glare', "");
         });
     }
 };
