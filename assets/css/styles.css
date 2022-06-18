@@ -272,7 +272,7 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: transform .9s!important;
+    transition: transform .9s;
     transform-style: preserve-3d;
     position: absolute;
     width: calc( 20% - 10px);
